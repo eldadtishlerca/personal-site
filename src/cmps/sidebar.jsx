@@ -9,6 +9,12 @@ export const Sidebar = () => {
       <ul className="sidebar-icons">
         <li
           className="sidebox"
+          onClick={() => window.open('https://github.com/eldadtishlerca')}
+        >
+          <FaGithub />
+        </li>
+        <li
+          className="sidebox"
           onClick={() => window.open('https://www.facebook.com/eldad.tishler')}
         >
           <FaFacebookF />
@@ -20,12 +26,6 @@ export const Sidebar = () => {
           }
         >
           <FaLinkedinIn />
-        </li>
-        <li
-          className="sidebox"
-          onClick={() => window.open('https://github.com/eldadtishlerca')}
-        >
-          <FaGithub />
         </li>
       </ul>
     </section>
