@@ -4,7 +4,7 @@ export const Sidebar = () => {
   return (
     <section className="sidebar">
       <div>
-        <h3 className="sidelogo">ET</h3>
+        <h3 className="sidelogo">TE</h3>
       </div>
       <ul className="sidebar-icons">
         <li

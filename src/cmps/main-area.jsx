@@ -15,7 +15,7 @@ export const MainArea = () => {
     <section className="main-area">
       <div className="heading-wrapper">
         <div>
-          <h1>eldad tishler,</h1>
+          <h1>tishler eldad,</h1>
         </div>
         <div>
           <h1>fullstack developer</h1>
