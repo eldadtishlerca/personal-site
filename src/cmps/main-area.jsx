@@ -38,7 +38,7 @@ export const MainArea = () => {
               <div
                 className="see-btn"
                 onClick={() =>
-                  window.open('https://yom-rishon-app.herokuapp.com')
+                  window.open('https://netflix-proj-3eeef.web.app/')
                 }
               >
                 <p>See Live</p>
@@ -46,9 +46,7 @@ export const MainArea = () => {
               <div
                 className="view-btn"
                 onClick={() =>
-                  window.open(
-                    'https://github.com/eldadtishlerca/YomRishon-Frontend'
-                  )
+                  window.open('https://github.com/eldadtishlerca/netflix-clone')
                 }
               >
                 <p>View Code</p>
