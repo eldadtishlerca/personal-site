@@ -1,0 +1,8 @@
+.main-content {
+ margin-left: 64px;
+ @include mobile-layout {
+  width: 98%;
+  margin-left: 15px;
+ }
+ width: calc(100% - 56px);
+}

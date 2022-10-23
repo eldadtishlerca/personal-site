@@ -1,0 +1,36 @@
+.mobile-bar {
+ display: none;
+ @include mobile-layout {
+  display: flex;
+  background: $bg-main;
+  z-index: 999;
+ }
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ height: 64px;
+ justify-content: center;
+ border-top: 1px solid $main-border;
+ .bar-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .bar-item {
+   font-size: 30px;
+   height: 64px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 0px 20px;
+  }
+
+  .right-bord {
+   border-right: 1px solid $main-border;
+  }
+
+  .left-bord {
+   border-left: 1px solid $main-border;
+  }
+ }
+}

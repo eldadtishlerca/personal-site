@@ -1,0 +1,47 @@
+.main-nav {
+ position: fixed;
+ z-index: 999;
+ background: #191919;
+ @include mobile-layout {
+  display: none;
+ }
+
+ display: flex;
+ justify-content: flex-start;
+ height: 58px;
+ width: 100%;
+ border-bottom: 1px solid $main-border;
+
+ .nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid $main-border;
+  font-family: light-poppins;
+  p {
+   font-size: 22px;
+  }
+ }
+
+ .cv-wrapper {
+  width: 100px;
+  transition: all 0.25s ease-in-out;
+  cursor: pointer;
+  &:hover {
+   color: #a9a9a9;
+  }
+  svg {
+   font-size: 1.4rem;
+   margin-right: 0.5rem;
+  }
+ }
+
+ .contact-wrapper {
+  width: 300px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+   color: #a9a9a9;
+  }
+ }
+}
