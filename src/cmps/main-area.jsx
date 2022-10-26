@@ -3,12 +3,15 @@ import {
   SiCss3,
   SiFirebase,
   SiJavascript,
+  SiMaterialui,
   SiMongodb,
   SiReact,
   SiRedux,
   SiSocketdotio,
   SiStripe,
 } from 'react-icons/si'
+import { BsPieChartFill } from 'react-icons/bs'
+import { CgDarkMode } from 'react-icons/cg'
 import { DiSass } from 'react-icons/di'
 
 export const MainArea = () => {
@@ -52,14 +55,14 @@ export const MainArea = () => {
         <div className="portfolio-card">
           <div className="card-header">
             <div className="img-wrapper">
-              <img className="unhover-image" src="netflix.png" alt="" />
-              <img className="hover-image" src="netflix-hover.png" alt="" />
+              <img className="unhover-image" src="dashboard.png" alt="" />
+              <img className="hover-image" src="dashboard-hover.png" alt="" />
             </div>
             <div className="btns-wrapper">
               <div
                 className="see-btn"
                 onClick={() =>
-                  window.open('https://netflix-proj-3eeef.web.app/')
+                  window.open('https://eldad-dashboard.netlify.app')
                 }
               >
                 <p>See Live</p>
@@ -67,7 +70,7 @@ export const MainArea = () => {
               <div
                 className="view-btn"
                 onClick={() =>
-                  window.open('https://github.com/eldadtishlerca/netflix-clone')
+                  window.open('https://github.com/eldadtishlerca/dashboard-app')
                 }
               >
                 <p>View Code</p>
@@ -75,20 +78,21 @@ export const MainArea = () => {
             </div>
           </div>
           <div className="card-info">
-            <h3>REACT NETFLIX CLONE APP</h3>
+            <h3>DASHBOARD APP</h3>
             <p>
-              A fully responsive React.JS & Firebase end to end application
-              using TMDB database. This is a clone of Netflix, an app that
-              allows members to watch TV shows and movies, can be used at the
-              same time in number of devices depending on your plan.
+              A fully responsive front-end (static) SPA using React.JS &
+              Material UI library. This app includes charts, data tables and
+              interactive calendar that allows you to manage and track your
+              business.
             </p>
+            <br />
             <br />
             <p>This app features:</p>
             <ul>
-              <li>- API calls to fetch tv shows and movies data.</li>
-              <li>- Stripe checkout for payments</li>
-              <li>- State management using React Redux.</li>
-              <li>- Google authentication with Firebase.</li>
+              <li>- Light / Dark Modes.</li>
+              <li>- Nivo Charts for 3D components.</li>
+              <li>- Formik & Yup allow form validation.</li>
+              <li>- Full Calendar library for events.</li>
             </ul>
           </div>
           <br />
@@ -97,16 +101,13 @@ export const MainArea = () => {
               <SiReact />
             </li>
             <li>
-              <SiRedux />
+              <SiMaterialui />
             </li>
             <li>
-              <DiSass />
+              <BsPieChartFill />
             </li>
             <li>
-              <SiFirebase />
-            </li>
-            <li>
-              <SiStripe />
+              <CgDarkMode />
             </li>
           </ul>
         </div>
@@ -181,6 +182,67 @@ export const MainArea = () => {
         <div className="portfolio-card">
           <div className="card-header">
             <div className="img-wrapper">
+              <img className="unhover-image" src="netflix.png" alt="" />
+              <img className="hover-image" src="netflix-hover.png" alt="" />
+            </div>
+            <div className="btns-wrapper">
+              <div
+                className="see-btn"
+                onClick={() =>
+                  window.open('https://netflix-proj-3eeef.web.app/')
+                }
+              >
+                <p>See Live</p>
+              </div>
+              <div
+                className="view-btn"
+                onClick={() =>
+                  window.open('https://github.com/eldadtishlerca/netflix-clone')
+                }
+              >
+                <p>View Code</p>
+              </div>
+            </div>
+          </div>
+          <div className="card-info">
+            <h3>REACT NETFLIX CLONE APP</h3>
+            <p>
+              A fully responsive React.JS & Firebase end to end application
+              using TMDB database. This is a clone of Netflix, an app that
+              allows members to watch TV shows and movies, can be used at the
+              same time in number of devices depending on your plan.
+            </p>
+            <br />
+            <p>This app features:</p>
+            <ul>
+              <li>- API calls to fetch tv shows and movies data.</li>
+              <li>- State management using React Redux.</li>
+              <li>- Google authentication with Firebase.</li>
+              <li>- Stripe checkout for payments(not yet).</li>
+            </ul>
+          </div>
+          <br />
+          <ul className="card-icons">
+            <li>
+              <SiReact />
+            </li>
+            <li>
+              <SiRedux />
+            </li>
+            <li>
+              <DiSass />
+            </li>
+            <li>
+              <SiFirebase />
+            </li>
+            <li>
+              <SiStripe />
+            </li>
+          </ul>
+        </div>
+        <div className="portfolio-card">
+          <div className="card-header">
+            <div className="img-wrapper">
               <img className="unhover-image" src="appsus.png" alt="" />
               <img className="hover-image" src="appsus-hover.png" alt="" />
             </div>
@@ -216,10 +278,11 @@ export const MainArea = () => {
             <p>This app features:</p>
             <ul>
               <li>- React class components & lifecycle methods to a class.</li>
-              <li>- Advanced filter and search for users</li>
-              <li>- Local storage to allow data storage </li>
+              <li>- Advanced filter and search for users.</li>
+              <li>- Local storage to allow data storage.</li>
             </ul>
           </div>
+          <br />
           <br />
           <ul className="card-icons">
             <li>
