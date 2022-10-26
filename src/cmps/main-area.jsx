@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   SiCss3,
   SiFirebase,
@@ -11,6 +12,12 @@ import {
 import { DiSass } from 'react-icons/di'
 
 export const MainArea = () => {
+  const [showAbout, setShowAbout] = useState(false)
+
+  const onClickAbout = () => {
+    setShowAbout(!showAbout)
+  }
+
   return (
     <section className="main-area">
       <div className="heading-wrapper">
@@ -22,10 +29,24 @@ export const MainArea = () => {
         </div>
         <div className="heading-line" />
         <div className="about-wrapper">
-          <div className="inner-wrapper">
+          <div className="inner-wrapper" onClick={onClickAbout}>
             <p>About Me</p>
           </div>
         </div>
+        {showAbout && (
+          <p
+            style={{
+              marginTop: '10px',
+              maxWidth: '800px',
+              fontSize: '24px',
+              lineHeight: '1.35',
+            }}
+          >
+            Open-minded with high passion for Fullstack development. I am
+            excited, prepared and fully committed to achieving the next goals
+            and complete tasks on the highest end.
+          </p>
+        )}
       </div>
       <div className="portfolio-wrapper">
         <div className="portfolio-card">
